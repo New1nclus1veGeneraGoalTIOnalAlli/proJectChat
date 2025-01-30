@@ -19,7 +19,9 @@ echo Установка библиотек из requirements.txt...
 pip install pyTelegramBotAPI pandas
 
 REM Запрос токена у пользователя
+
 set /p TOKEN="Введите ваш токен: "
+echo TOKEN > token.txt
 set /p ID_admin="Введите id пользователя: "
 
 REM Создание поддиректории, если она не существует
